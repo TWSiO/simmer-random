@@ -8,8 +8,8 @@ import Data.Tuple (Tuple(..))
 import Data.Newtype (over)
 import Data.Either (Either(..))
 
-import Interpret as I
-import Interface (convertFn)
+import Simmer.Interpret as I
+import Simmer.Interface (convertFn)
 
 simmerRandom :: I.TempForeignFn
 simmerRandom = convertFn r

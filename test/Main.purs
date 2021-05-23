@@ -12,14 +12,14 @@ import Test.Spec.Assertions (shouldNotEqual)
 import Data.Either (Either)
 
 import Simmer.Random (library)
-import Interpret as I
+import Simmer.Interpret as I
 
 main :: Effect Unit
 main = launchAff_ $ runSpec [consoleReporter] do
     suite
 
 suite :: Spec Unit
-suite = describe "std library Random tests" do
+suite = describe "Random library tests" do
     randomSimple
 
 eval :: String -> Effect (Either String I.Value)
